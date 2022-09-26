@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "tailwindcss": "^3.1.8"
+  },
+  "name": "base-apparel-coming-soon",
+  "description": "![Design preview for the Base Apparel coming soon page coding challenge](./design/desktop-preview.jpg)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "eslint": "^8.24.0"
+  },
+  "scripts": {
+    "watch": "tailwindcss -i ./src/input.css -o ./public/css/styles.css --watch"
+  },
+  "author": "Yaika Race",
+  "license": "GPL-3.0-or-later"
+}

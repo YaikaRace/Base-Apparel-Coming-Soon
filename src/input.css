@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.error {
+  @apply border-soft-red/100 border-2;
+}
+.form-error > .error-msg {
+  @apply block;
+}

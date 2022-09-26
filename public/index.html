@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body
+    class="min-h-screen min-w-[100vw] font-body sm:mx-auto md:w-full md:grid md:grid-cols-2 md:grid-rows-[8] md:gap-4"
+  >
+    <header class="p-8 md:row-span-1 md:pt-14 md:px-32">
+      <img src="images/logo.svg" alt="Logo base apparel" class="w-20 sm:w-32" />
+    </header>
+    <main class="md:row-span-4 md:col-start-1 md:px-24">
+      <img
+        src="images/hero-mobile.jpg"
+        alt="Base apparel banner"
+        class="object-cover w-full md:hidden sm:w-screen"
+      />
+      <article
+        class="mt-14 w-[88%] mx-auto text-center md:text-left sm:w-2/3 md:w-[88%]"
+      >
+        <h1
+          class="text-5xl uppercase text-center tracking-[0.2em] text-d-grayish-red sm:text-7xl md:text-left font-bold"
+        >
+          <span class="text-desatured-red font-light">We're</span> coming soon
+        </h1>
+        <p class="text-desatured-red mt-6 text-[15px] text sm:text-lg">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <form class="w-full relative pt-10" data-id="form">
+          <input
+            type="text"
+            placeholder="Email Address"
+            class="px-4 py-2 border-desatured-red/50 text-d-grayish-red placeholder:text-desatured-red border-[1px] w-full text-left rounded-full"
+            data-id="email-input"
+          />
+          <button
+            type="submit"
+            class="bg-gradient-to-r from-gr3 to-gr4 transition-all absolute right-0 py-[11px] px-6 rounded-full shadow-desatured-red shadow-md hover:from-gr2 hover:to-gr3 hover:bg-gradient-to-r hover:px-8 hover:shadow-lg hover:shadow-desatured-red/100"
+            data-id="submit"
+          >
+            <img src="images/icon-arrow.svg" alt="Arrow" />
+          </button>
+          <p class="error-msg hidden text-desatured-red text-left pl-4 my-2">
+            Please provide a valid email
+          </p>
+          <img
+            src="images/icon-error.svg"
+            alt="error icon"
+            class="error-msg hidden absolute right-20 bottom-11"
+          />
+        </form>
+        <div class="md:row-span-1 md:col-span-1">
+          <p class="mt-8 text-xs text-center">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              class="text-soft-red"
+              >Frontend Mentor</a
+            >. Coded by
+            <a
+              href="https://www.frontendmentor.io/yaikarace"
+              class="text-soft-red"
+              >Yahir (Yaika Race)</a
+            >.
+          </p>
+        </div>
+      </article>
+    </main>
+    <section
+      class="md:block hidden row-span-7 row-start-1 row-end-7 col-start-2 h-full relative"
+    >
+      <img
+        src="images/hero-desktop.jpg"
+        alt="Base Apparel Banner"
+        class="md:block hidden h-full object-cover right-0 absolute"
+      />
+    </section>
+  </body>
+</html>
